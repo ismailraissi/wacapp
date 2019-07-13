@@ -1,0 +1,105 @@
+<head>
+<link href="css/ipapi.css" rel="stylesheet" type="text/css"
+	media="only screen and (min-width: 750px)">
+<link href="css/ipapi_small.css" rel="stylesheet" type="text/css"
+	media="only screen and (max-width: 750px)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<button id="loginButton">login</button>
+	<div id="frame">
+		<div id="myLocation">
+			<h2 id="mijnLocatie">Mijn locatie:</h2>
+			<BR> <label id="stad">Stad: </label> <BR> <label id="regio">Regio:
+			</label> <BR> <label id="land">Land: </label> <BR> <label
+				id="continent">Continent: </label> <BR> <label id="postcode">Postcode:
+			</label> <BR> <label id="latitude">Latitude: </label> <BR> <label
+				id="longitude">Longitude: </label> <BR> <label id="tijdzone">Tijdzone:
+			</label> <BR> <label id="currency">Currency: </label> <BR>
+		</div>
+		<BR> <BR>
+		<div id="weatherInfo">
+			<h2 id="weerin">Het weer in</h2>
+			<label id="temperatuur">Temperatuur: </label><BR> <label
+				id="luchtvochtigheid">Luchtvochtigheid: </label><BR> <label
+				id="windsnelheid">Windsnelheid: </label><BR> <label
+				id="windrichting">Windrichting: </label><BR> <label
+				id="zonsopgang">Zonsopgang: </label><BR> <label
+				id="zonsondergang">Zonsondergang: </label><BR>
+			<BR>
+			<button id='toevoegen'>Land toevoegen</button>
+		</div>
+		<BR> <BR>
+		<div id="country-list">
+			<h3>Countries:</h3>
+			<table>
+				<tr class="tr-heading">
+					<th>Land</th>
+					<th>Hoofdstad</th>
+					<th>Regio</th>
+					<th>Oppervlakte</th>
+					<th>Inwoners</th>
+				</tr>
+			</table>
+
+
+		</div>
+
+	</div>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div id="containerModal">
+				<form id="formId">
+					Land: <input type="text" name="land_in" id="land_in_id"><br>
+					Hoofdstad: <input type="text" name="hoofdstad_in"
+						id="hoofdstad_in_id"><br> Regio: <input type="text"
+						name="regio_in" id="regio_in_id"><br> Oppervlakte: <input
+						type="number" name="oppervlakte_in" id="oppervlakte_in_id"><br>
+					Inwoners: <input type="number" name="inwoners_in"
+						id="inwoners_in_id">
+				</form>
+				<button id="submit">Save Changes</button>
+				<button id="close">Cancel</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="myModalInloggen" class="modalInloggen">
+		<div class="modal-contentInloggen">
+			<div id="containerModalInloggen">
+				<form id="formIdInloggen">
+					Gebruikersnaam: <input type="text" id="username" name="username">
+					Wachtwoord: <input type="text" id="password" name="password">
+				</form>
+				<button id="submitLogin">Login</button>
+				<button id="closeLogin">Annuleer</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="myModalToevoegen" class="modalToevoegen">
+		<div class="modal-contentToevoegen">
+			<div id="containerModalToevoegen">
+				<form id="formIdToevoegen">
+					Code: <input type="text" name="code_in_toe" id="code_in_id_toe"><br>
+					iso3: <input type="text" name="iso_in_toe" id="iso_in_id_toe"><br>
+					Naam: <input type="text" name="land_in_toe" id="land_in_id_toe"><br>
+					Regering: <input type="text" name="regering_in_toe" id="regering_in_id_toe"><br>
+					Continent: <input type="text" name="continent_in_toe"
+						id="continent_in_id_toe"><br> Hoofdstad: <input
+						type="text" name="hoofdstad_in_toe" id="hoofdstad_in_id_toe"><br>
+					Regio: <input type="text" name="regio_in_toe" id="regio_in_id_toe"><br>
+					Oppervlakte: <input type="number" name="oppervlakte_in_toe"
+						id="oppervlakte_in_id_toe"><br> Inwoners: <input
+						type="number" name="inwoners_in_toe" id="inwoners_in_id_toe">
+				</form>
+				<button id="submitToevoegen">Save</button>
+				<button id="closeToevoegen">Cancel</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/ipapi.js"></script>
+
+</body>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="wacapp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>wacapp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="wacapp-1.0.war">
+      <element id="artifact" artifact-name="wacapp:war exploded" />
+    </root>
+  </artifact>
+</component>

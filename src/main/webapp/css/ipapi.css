@@ -1,0 +1,117 @@
+body{
+	background-color: gray;
+}
+
+table, th, td{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+tr:hover{
+	background-color: white;
+	cursor: pointer;
+}
+
+#frame {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 20fr;
+	grid-gap: 10px;
+}
+
+#myLocation {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#weatherInfo {
+	grid-column:2;
+	grid-row: 1;
+}
+
+#country-list {
+	grid-column: 1/2;
+	grid-row: 2;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	overflow:auto;
+}
+
+.modal-content {
+	background-color: green;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid black;
+	width: 80%;
+}
+
+#containerModal{
+	width: 500px;
+	clear: both;
+}
+
+#containerModal input{
+	width: 100%;
+	clear: both;
+}
+
+.modalToevoegen {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	overflow:auto;
+}
+
+.modal-contentToevoegen {
+	background-color: green;
+	margin: 5% auto;
+	padding: 20px;
+	border: 1px solid black;
+	width: 80%;
+}
+
+#containerModalToevoegen{
+	width: 500px;
+	clear: both;
+}
+
+#containerModalToevoegen input{
+	width: 100%;
+	clear: both;
+	
+}.modalInloggen {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	overflow:auto;
+}
+
+.modal-contentInloggen {
+	background-color: green;
+	margin: 5% auto;
+	padding: 20px;
+	border: 1px solid black;
+	width: 80%;
+}
+
+#containerModalInloggen{
+	width: 500px;
+	clear: both;
+}
+
+#containerModalInloggen input{
+	width: 100%;
+	clear: both;
+}
